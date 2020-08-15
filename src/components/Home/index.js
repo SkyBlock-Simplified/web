@@ -9,7 +9,7 @@ class Home extends Component {
                 <NavBar />
 
                 <div className="w-full h-screen" style={{ position: 'relative' }}>
-                    <div className="w-full h-screen" style={{ position: 'absolute', backgroundImage: 'url("http://localhost:3000/banner.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '50% 50%', filter: 'blur(4px)' }}></div>
+                    <div className="w-full h-screen" style={{ position: 'absolute', backgroundImage: 'url("http://localhost:3000/banner.png")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '50% 50%', filter: 'blur(4px)' }}></div>
                     <div class="relative overflow-hidden">
                         <div class="relative">
                             <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
