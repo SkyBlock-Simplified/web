@@ -9,17 +9,17 @@ class Home extends Component {
                 <NavBar />
 
                 <div className="w-full h-screen" style={{ position: 'relative' }}>
-                    <div className="w-full h-screen" style={{ position: 'absolute', backgroundImage: 'url("http://localhost:3000/banner.png")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '50% 50%', filter: 'blur(4px)' }}></div>
+                    <div className="w-full h-screen" style={{ position: 'absolute', backgroundImage: 'url("http://localhost:3000/banner.png")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '50% 50%', filter: 'blur(3px)' }}></div>
                     <div class="relative overflow-hidden">
                         <div class="relative">
                             <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                                 <div class="text-center">
-                                    <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                                    <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-6xl">
                                         SkyBlock Simplified
                                         <br />
                                         <span class="text-indigo-600">Slogan here</span>
                                     </h2>
-                                    <p class="mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 text-xl">
+                                    <p class="mt-3 text-base font-semibold text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 text-xl">
                                         We are a massive community striving to make skyblock better everyday.
                                     </p>
                                     <div class="t-5 sm:mt-8 sm:flex justify-center">

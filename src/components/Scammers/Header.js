@@ -75,7 +75,7 @@ class Header extends Component {
 
                                         <div class="w-1/5 ml-2">
                                             <div class="relative">
-                                                <span class="inline-block w-full h-full rounded-md shadow-sm">
+                                                <span class="inline-block w-full h-full rounded-md shadow-sm bg-gray-800">
                                                     <button onClick={this.openFilter} type="button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label" class="cursor-default relative w-full rounded-md bg-lightDark pl-3 pr-10 h-16 text-left sm:text-sm sm:leading-5 shadow-lg">
                                                         <div class="flex items-center space-x-3">
                                                             <span className="text-lg text-white font-medium">{this.state.filters.find(filter => filter.value === this.state.selected).name}</span>
@@ -88,7 +88,7 @@ class Header extends Component {
                                                     </button>
                                                 </span>
 
-                                                {this.state.open ? <div style={{ zIndex: 999999 }} class="absolute mt-1 w-full rounded-md bg-lightDark shadow-lg">
+                                                {this.state.open ? <div style={{ zIndex: 999999 }} class="absolute mt-1 w-full rounded-md bg-gray-800 shadow-lg">
                                                     <ul tabindex="-1" role="listbox" class="max-h-56 rounded-md py-1 text-base leading-6 shadow-xs overflow-auto focus:outline-none sm:text-sm sm:leading-5">
                                                         {this.state.filters.map((filter, index) => this.renderFilter(filter, index))}
                                                     </ul>

@@ -13,6 +13,7 @@ class Router extends Component {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/scammers" component={Scammers} />
                     <Route exact path="/scammers/:id" component={Scammer} />
+                    <Route exact path="/scammers/:id/:incident" component={Scammer} />
                 </Switch>
             </BrowserRouter>
         )
