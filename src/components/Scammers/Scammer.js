@@ -9,7 +9,7 @@ class Scammer extends Component {
             <Link to={`/scammers/c5ef334745934f398bb12eaa40dd986e`} class="overflow-hidden w-full h-48 px-3 py-2 md:w-1/2 lg:w-1/3 xl:w-1/3">
                 <div class="flex flex-row w-full h-full shadow-lg bg-gray-900 rounded-lg p-4">
                     <div className="flex flex-row">
-                        <img width="60" src={`https://mc-heads.net/body/robloxrocks`} />
+                        <img width="60" src={`https://mc-heads.net/body/robloxrocks`} alt="Player Body" />
 
                         <div className="flex flex-col ml-4">
                             <h1 className="text-white font-bold text-2xl">

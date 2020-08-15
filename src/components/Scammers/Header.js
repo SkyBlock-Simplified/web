@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Header extends Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
-            filters: [{name: 'bruh', value: 0}],
+            filters: [{ name: 'bruh', value: 0 }],
             name: '',
             selected: 0,
             open: false
@@ -43,7 +43,7 @@ class Header extends Component {
 
     renderFilter(filter) {
         return (
-            <li onClick={this.changeFilter.bind(null, filter.value)} role="option" class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-gray-700">
+            <li onClick={this.changeFilter.bind(null, filter.value)} className="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-gray-700">
                 <div class="flex items-center space-x-3">
                     <span class="font-normal text-white block truncate">
                         {filter.name}
@@ -68,6 +68,7 @@ class Header extends Component {
 
                         <div class="mt-8 lg:mt-0">
                             <div class="max-w-lg lg:ml-auto lg:max-w-xl">
+                                {/* eslint-disable-next-line */}
                                 <a class="mt-3 flex items-start rounded-lg text-base leading-6 font-medium text-white">
                                     <div className="flex flex-row w-full h-full">
                                         <input onChange={this.nameChange} defaultValue={this.props.name} className="w-full rounded-lg h-16 mx-auto focus:outline-none focus:shadow-outline text-xl px-8 shadow-lg mb-5 text-black" placeholder="Search"></input>

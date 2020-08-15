@@ -48,7 +48,7 @@ class NavBar extends Component {
 
     renderGuild(guild) {
         return (
-            <li onClick={this.changeFilter.bind(null, guild.id)} role="option" class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-gray-700">
+            <li onClick={this.changeFilter.bind(null, guild.id)} class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-gray-700">
                 <div class="flex items-center space-x-3">
                     <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full" />
                     <span class="font-normal block truncate">
@@ -124,9 +124,9 @@ class NavBar extends Component {
                 </div>
                 <div class={this.state.togglePullout ? "" : "hidden sm:hidden"}>
                     <div class="px-2 pt-2 pb-3">
-                        <a href="#" class={`block px-3 py-2 rounded-md text-base font-medium text-white ${document.location.pathname.startsWith("/scammers") ? "bg-gray-900" : ""} focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out`}>Scammers</a>
-                        <a href="#" class={`mt-1 block px-3 py-2 rounded-md text-base font-medium text-white ${document.location.pathname.startsWith("/reputation") ? "bg-gray-900" : ""} text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out`}>Reputation</a>
-                        <a href="#" class={`mt-1 block px-3 py-2 rounded-md text-base font-medium text-white ${document.location.pathname.startsWith("/discord") ? "bg-gray-900" : ""} text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out`}>Discord</a>
+                        <Link to="/scammers" class={`block px-3 py-2 rounded-md text-base font-medium text-white ${document.location.pathname.startsWith("/scammers") ? "bg-gray-900" : ""} focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out`}>Scammers</Link>
+                        <Link to="/reputation" class={`mt-1 block px-3 py-2 rounded-md text-base font-medium text-white ${document.location.pathname.startsWith("/reputation") ? "bg-gray-900" : ""} text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out`}>Reputation</Link>
+                        <Link to="/discord" class={`mt-1 block px-3 py-2 rounded-md text-base font-medium text-white ${document.location.pathname.startsWith("/discord") ? "bg-gray-900" : ""} text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out`}>Discord</Link>
                     </div>
                 </div>
             </nav>
