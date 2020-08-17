@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import moment from 'moment';
 
 class Incident extends Component {
     render() {
         return (
-            <Link to={`/scammers/${this.props.id}/${this.props.incident._id}`} class="w-full h-48 px-3 py-2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+            <a style={{cursor: 'pointer'}} onClick={() => this.props.setIncident(this.props.incident._id)} class="w-full h-48 px-3 py-2 md:w-1/2 lg:w-1/3 xl:w-1/3 transition duration-500 ease-in-out transform hover:-translate-y-3">
                 <div class="flex flex-row w-full h-full shadow-lg bg-gray-900 rounded-lg p-4 relative">
                     <div className="flex overflow-hidden flex-col text-white">
                         <h2 className="text-white font-bold">Reported {moment(this.props.incident.timestamp).fromNow()}</h2>
@@ -23,7 +22,7 @@ class Incident extends Component {
                         </span>
                     </div>
                 </div>
-            </Link>
+            </a>
         )
     }
 }
